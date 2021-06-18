@@ -7,8 +7,6 @@ jobs:
       - name: echo $PWD
         run: echo $PWD
       - name: docker build 
-        run: cd ../..
-      - name: docker build 
         run: sudo docker-compose build
       - name: docker up
         run: sudo docker-compose up -d
