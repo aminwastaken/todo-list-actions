@@ -4,7 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $PWD
+      - name: echo $PWD
+        run: echo $PWD
       - name: docker build 
         run: cd ../..
       - name: docker build 
