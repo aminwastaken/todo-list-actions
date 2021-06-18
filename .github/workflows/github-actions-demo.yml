@@ -4,11 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      name: "docker build" 
-      - run: sudo docker-compose build
-      name: "docker up" 
-      - run: sudo docker-compose up -d
-      name: "test commmand"  
-      - run: sudo docker-compose exec php bin/phpunit
+      - name: "docker build" 
+        run: sudo docker-compose build
+      - name: "docker up" 
+        run: sudo docker-compose up -d
+      - name: "test commmand"  
+        run: sudo docker-compose exec php bin/phpunit
 
 
